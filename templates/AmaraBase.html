@@ -33,7 +33,7 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="/ordering">ONU自动发现</a></li>
+                    <li><a href="/onu">ONU自动发现</a></li>
                 </ul>
                 <ul class="nav navbar-nav">
                     <li><a href="/order_list">待定</a></li>
@@ -61,5 +61,6 @@
 {% block scripts %}
     <script src="/static/js/jquery.min.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
+    {% block myScript %} {% endblock myScript %}
 {%- endblock scripts %}
 

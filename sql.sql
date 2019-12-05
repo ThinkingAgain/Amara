@@ -1,0 +1,2 @@
+因网管时间和服务器时间不同步, 所以now() + 5分钟
+select * from onu_autofind_201911 where date="2019-11-26" and time between date_add(now(), interval - 10 minute) and date_add(now(), interval + 5 minute) Order by Time DESC; 

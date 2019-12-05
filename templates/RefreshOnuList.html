@@ -1,0 +1,9 @@
+{% for row in onu_list %}
+    <tr>
+        <td>{{ row["TIME"] }}</td>
+        <td>{{ row["REGION"] }}</td>
+        <td>{{ row["DEV"] }}</td>
+        <td>{{ " - ".join([row["FN"], row["SN"], row["PN"]]) }}</td>
+        <td>{{ row["SERIALNUM"] }}</td>
+    </tr>
+{% endfor %}
